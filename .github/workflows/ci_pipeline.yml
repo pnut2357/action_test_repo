@@ -21,9 +21,6 @@ jobs:
     - name: Install poetry
       run: |
         make pippoetry
-    - name: Spawn Virtual Env
-      run: |
-        make venv
     - name: Install dependencies
       run: |
         make install
