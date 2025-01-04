@@ -1,9 +1,9 @@
 install:
-	poetry install --with dev && poetry lock
+	poetry install --with dev
 test:
 	poetry run python -m pytest
 format:
-	black *.py
+	black src/*.py
 lint:
-	pylint --disable=R,C hello.py
+	pylint --disable=R,C src/pipeline.py
 all: install test
