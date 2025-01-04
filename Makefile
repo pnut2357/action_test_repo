@@ -5,7 +5,7 @@ install:
 test:
 	poetry run python -m pytest
 format:
-	black src/*.py
+	black ./src/*.py
 lint:
-	pylint --disable=R,C src/pipeline.py
+	pylint --disable=R,C ./src/pipeline.py
 all: pippoetry install test
