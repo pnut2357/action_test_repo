@@ -7,3 +7,4 @@ pylint
 tensorflow
 transformers
 gradio
+tf-keras
